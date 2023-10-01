@@ -1,0 +1,54 @@
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    font-size: 1.5vw;
+}
+
+.viewScores {
+    font-size: 1.5vw;
+    color: peru;
+    border: none;
+    background-color:white;
+    text-shadow: 5px 5px 5px gray;
+}
+
+.viewScores:hover {
+    background-color: peru;
+    color: white;
+    text-shadow:5px 5px 5px rgb(214, 213, 213);
+}
+
+main {
+    margin:0 20%;
+    text-align: center;
+    
+}
+.questions {
+    font-size: 3vw;
+}
+
+main p {
+    font-size: 2vw;
+    /* margin:auto; */
+}
+
+.startBtn {
+    font-size: 2vw;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color:peru;
+    margin-top: 20px;
+    padding: 5px 15px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.startBtn:hover {
+    transform: scale(1.2);
+    transition: all 0.25s ease-in;
+}
