@@ -32,9 +32,8 @@ main {
     font-size: 3vw;
 }
 
-main p {
+.notes {
     font-size: 2vw;
-    /* margin:auto; */
 }
 
 .startBtn {
@@ -51,4 +50,23 @@ main p {
 .startBtn:hover {
     transform: scale(1.2);
     transition: all 0.25s ease-in;
+}
+
+.choices button {
+    display: flex;
+    flex-basis: start;
+    font-size: 2vw;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color:peru;
+    padding: 5px 15px;
+    box-shadow: 5px 5px 5px gray;
+    margin: 2rem 0;
+    width: 30vw;
+}
+
+.choices button:hover {
+    transform: scale(1.2);
+    transition: all 0.15s ease-in;
 }
