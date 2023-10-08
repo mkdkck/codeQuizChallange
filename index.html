@@ -10,16 +10,25 @@
 
   <body>
         <header>
-            <button class="viewScores">View High Scores</button>
+            <button class="viewScores"><a href="highscores.html">View High Scores</a></button>
             <div>Time remaining: <span class="timer">60</span> seconds</div>                       
         </header>
 
-        <main>
+        <main id="main">
             <h1 class="questions">Coding Quiz Challenge</h1>
             <div class="choices"></div>
             <p class="notes">Answear these codes related questions as much as possible within 60 seconds!</p>
             <button class="startBtn">Starts Now !</button>
         </main>
+
+        <div id="end-screen" class="hide">
+          <h2>Congrats! You have answered all the questions!</h2>
+          <p> Time remaining is : <span id="final-score"></span> seconds.</p>
+          <form id="scoreForm">
+            Enter initials: <input type="text" id="initials" max="3" />
+            <button id="submit">Submit</button>
+          </form>
+        </div>
 
         <script src="./assets/javascript/script.js"></script>
   </body>

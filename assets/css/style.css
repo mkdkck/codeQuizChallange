@@ -17,17 +17,22 @@ header {
     text-shadow: 5px 5px 5px gray;
 }
 
+.viewScores a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .viewScores:hover {
     background-color: peru;
     color: white;
     text-shadow:5px 5px 5px rgb(214, 213, 213);
 }
 
-main {
+main, #end-screen {
     margin:0 20%;
     text-align: center;
-    
 }
+
 .questions {
     font-size: 3vw;
 }
@@ -36,7 +41,7 @@ main {
     font-size: 2vw;
 }
 
-.startBtn {
+.startBtn, #submit{
     font-size: 2vw;
     color: white;
     border: none;
@@ -69,4 +74,34 @@ main {
 .choices button:hover {
     transform: scale(1.2);
     transition: all 0.15s ease-in;
+}
+
+.hide {
+    display: none;
+  }
+
+.wrapper {
+    margin:5rem 40%;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.wrapper h1{
+    color: peru
+}
+
+.wrapper button {
+    font-size: 1vw;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color:peru;
+    margin-top: 20px;
+    padding: 5px 15px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.wrapper ol{
+    text-align: left;
+    font-size: 1vw;
 }
