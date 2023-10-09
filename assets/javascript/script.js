@@ -10,8 +10,8 @@ var score = document.querySelector("#final-score");
 var submit = document.querySelector("#submit");
 var input = document.querySelector("#initials");
 var form = document.querySelector("#scoreForm");
-var savedScore = [];
 
+var savedScore = [];
 var timeRemaining = 60;
 var questionNum = 0;
 var counting;
@@ -48,19 +48,18 @@ var questionLoop = [{
 // startButton event, create four blank buttons, hide start button, clear the notes section, starts the questions function.
 startBtn.addEventListener("click", function(){
     timerStart()
-
+    //create empty buttons
     for (var i=0; i < 4; i++) {
         var emptyBtn = document.createElement ("button");
         emptyBtn.setAttribute("class","btn")
         emptyBtn.setAttribute("value", "");
         choices.appendChild (emptyBtn);
     };
-
+    //hide startbutton & clear notes.
     startBtn.setAttribute("class","hide");
     notes.textContent = "";
 
     moreQuestions();
-
 });
 
 // quetsion loop function starts here, achieving auto switching to the next questions when condition meets
@@ -112,6 +111,7 @@ function timerStart(){
     },1000);
 }
 
+//into the page that allow player to save score, hide the quiz & answers parts.
 function scoreBoard(){
     clearInterval(counting);
     timer.textContent = timeRemaining;
@@ -125,6 +125,7 @@ function scoreBoard(){
     }    
 }
 
+// stop player from typing empty intitials.
 form.addEventListener("submit", function(event){
     event.preventDefault();
     if (input.value === "") {
@@ -134,6 +135,7 @@ form.addEventListener("submit", function(event){
     }
 })
 
+// save score function, put players detail into the local storage, jump to the page the shows high scores.
 function saveScore() {
     initials.int = input.value;
     initials.sec = score.innerHTML;
